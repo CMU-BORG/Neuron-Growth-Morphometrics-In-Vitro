@@ -1,4 +1,6 @@
 # Neuron-Growth-Morphometrics-In-Vitro
+[![DOI](https://zenodo.org/badge/473702722.svg)](https://zenodo.org/badge/latestdoi/473702722)
+
 This is a semi-automated quantitative analysis method for assessing neuron morphology imaged using bright-field microscopy as described in "Quantitative evaluation of neuron developmental morphology in vitro using the change-point test" by AS Liao, W Cui, V Webster-Wood, and YJ Zhang (submitted to Neuroinformatics 2022). This method uses outputs from neurite traces obtained using NeuronJ, a plugin in ImageJ. It evaluates the traces using seven morphometrics:
 * Common Morphometrics (used previously to discriminate between the morphology of neuron cell types) 
   * Total Length (Sum of All Neurite Lengths) Per Cell
