@@ -16,7 +16,7 @@ This is a semi-automated quantitative analysis method for assessing neuron morph
 
 ## Table of Contents
 * [General Info](#general-info)
-* [Directories](#Directories)
+* [Directories](#directories)
 
 ## General Info
 
@@ -33,67 +33,37 @@ This directory includes an example dataset to run the analysis code (it is a sma
 
 The directory tree structure can be found below. The outermost directory is 'dir0_experimentID', which should house all the data from a given experiment. The next directory ('dir1_div###') organizes the data into the time points in which they were imaged. After that, the 'dir2_plateID#' is used to group the data by the well plate ID, which would be useful is multiple plates were used simultaneously. Following that, the 'dir3_wellColumnID#' and 'dir4_wellRowID#' further group the data based on the well ID within a given plate. This enable multiple groups of data to be analyzed with a single run of 'runNeuronQuant.R'.
 
-dir0_experimentID
-
-    ├───dir1_div000
-    
-    │   ├───dir2_plateID0
-    
-    │   │   ├───dir3_wellColumnID0
-    
-    │   │   │   ├───dir4_wellRowID0
-    
-    │   │   │   └───dir4__wellRowID1
-    
-    │   │   └───dir3_wellColumnID1
-    
-    │   │       ├───dir4_wellRowID0
-    
-    │   │       └───dir4_wellRowID1
-    
-    │   └───dir2_plateID1
-    
-    │       ├───dir3_wellColumnID0
-    
-    │       │   ├───dir4_wellRowID0
-    
-    │       │   └───dir4_wellRowID1
-    
-    │       └───dir3_wellColumnID1
-    
-    │           ├───dir4_wellRowID0
-    
-    │           └───dir4_wellRowID1
-    
-    └───dir1_div010
-    
-        ├───dir2_plateID0
-        
-        │   ├───dir3_wellColumnID0
-        
-        │   │   ├───dir4_wellRowID0
-        
-        │   │   └───dir4_wellRowID1
-        
-        │   └───dir3_wellColumnID1
-        
-        │       ├───dir4_wellRowID0
-        
-        │       └───dir4_wellRowID1
-        
-        └───dir2_plateID1
-        
-            ├───dir3_wellColumnID0
-            
-            │   ├───dir4_wellRowID0
-            
-            │   └───dir4_wellRowID1
-            
-            └───dir3_wellColumnID1
-            
-                ├───dir4_wellRowID0
-                
-                └───dir4_wellRowID1
+    └───dir0_experimentID
+        ├───dir1_div000
+        │   ├───dir2_plateID0
+        │   │   ├───dir3_wellColumnID0
+        │   │   │   ├───dir4_wellRowID0
+        │   │   │   └───dir4__wellRowID1
+        │   │   └───dir3_wellColumnID1
+        │   │       ├───dir4_wellRowID0
+        │   │       └───dir4_wellRowID1
+        │   └───dir2_plateID1
+        │       ├───dir3_wellColumnID0
+        │       │   ├───dir4_wellRowID0
+        │       │   └───dir4_wellRowID1
+        │       └───dir3_wellColumnID1
+        │           ├───dir4_wellRowID0
+        │           └───dir4_wellRowID1
+        └───dir1_div010
+            ├───dir2_plateID0
+            │   ├───dir3_wellColumnID0
+            │   │   ├───dir4_wellRowID0
+            │   │   └───dir4_wellRowID1
+            │   └───dir3_wellColumnID1
+            │       ├───dir4_wellRowID0
+            │       └───dir4_wellRowID1
+            └───dir2_plateID1
+                ├───dir3_wellColumnID0
+                │   ├───dir4_wellRowID0
+                │   └───dir4_wellRowID1
+                └───dir3_wellColumnID1
+                    ├───dir4_wellRowID0
+                    └───dir4_wellRowID1
                 
 
 ### 'reportedDataset'
