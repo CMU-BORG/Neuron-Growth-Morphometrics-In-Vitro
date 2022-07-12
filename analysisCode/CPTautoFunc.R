@@ -13,7 +13,7 @@
 #####
 # The CPT Rcode from Byrne et al. (2009) was modified for 
 # A S Liao, W Cui, V Webster-Wood, Y J Zhang
-# Quantitative evaluation of neuron developmental morphology in vitro using the change-point test
+# Semi-automated quantitative evaluation of neuron developmental morphology in vitro using the change-point test
 # Submitted to: Neuroinformatics 2022
 #
 # This is an "automated" version in which 
