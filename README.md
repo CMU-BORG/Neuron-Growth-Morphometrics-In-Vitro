@@ -34,36 +34,67 @@ This directory includes an example dataset to run the analysis code (it is a sma
 The directory tree structure can be found below. The outermost directory is 'dir0_experimentID', which should house all the data from a given experiment. The next directory ('dir1_div###') organizes the data into the time points in which they were imaged. After that, the 'dir2_plateID#' is used to group the data by the well plate ID, which would be useful is multiple plates were used simultaneously. Following that, the 'dir3_wellColumnID#' and 'dir4_wellRowID#' further group the data based on the well ID within a given plate. This enable multiple groups of data to be analyzed with a single run of 'runNeuronQuant.R'.
 
 dir0_experimentID
+
     ├───dir1_div000
+    
     │   ├───dir2_plateID0
+    
     │   │   ├───dir3_wellColumnID0
+    
     │   │   │   ├───dir4_wellRowID0
+    
     │   │   │   └───dir4__wellRowID1
+    
     │   │   └───dir3_wellColumnID1
+    
     │   │       ├───dir4_wellRowID0
+    
     │   │       └───dir4_wellRowID1
+    
     │   └───dir2_plateID1
+    
     │       ├───dir3_wellColumnID0
+    
     │       │   ├───dir4_wellRowID0
+    
     │       │   └───dir4_wellRowID1
+    
     │       └───dir3_wellColumnID1
+    
     │           ├───dir4_wellRowID0
+    
     │           └───dir4_wellRowID1
+    
     └───dir1_div010
+    
         ├───dir2_plateID0
+        
         │   ├───dir3_wellColumnID0
+        
         │   │   ├───dir4_wellRowID0
+        
         │   │   └───dir4_wellRowID1
+        
         │   └───dir3_wellColumnID1
+        
         │       ├───dir4_wellRowID0
+        
         │       └───dir4_wellRowID1
+        
         └───dir2_plateID1
+        
             ├───dir3_wellColumnID0
+            
             │   ├───dir4_wellRowID0
+            
             │   └───dir4_wellRowID1
+            
             └───dir3_wellColumnID1
+            
                 ├───dir4_wellRowID0
+                
                 └───dir4_wellRowID1
+                
 
 ### 'reportedDataset'
 This directory hosts the reported dataset from Liao et al. (2022). There are two sub-directories inside: 'allFeatures_fig8' and 'highlightedFeatures_fig6fig7'. These two directories include the Jupyter files, data spreadsheet (.xlsx), and resulting .png and .svg files used to generate the violin plots found in Figures 6, 7, and 8 in Liao et al. (2022). 
