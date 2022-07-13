@@ -1,7 +1,7 @@
 #####
 # This performs the automated neuron quantification based on
 # A S Liao, W Cui, V Webster-Wood, Y J Zhang
-# Quantitative evaluation of neuron developmental morphology in vitro using the change-point test
+# Semi-automated quantitative evaluation of neuron developmental morphology in vitro using the change-point test
 # Submitted to: Neuroinformatics 2022
 
 # This script takes the results from NeuronJ (coordinates of the trace, tracing metadata) and the change-point test results

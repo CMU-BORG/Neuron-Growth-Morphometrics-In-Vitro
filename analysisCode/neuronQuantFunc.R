@@ -1,7 +1,7 @@
 #####
 # This performs the automated neuron quantification based on
 # A S Liao, W Cui, V Webster-Wood, Y J Zhang
-# Quantitative evaluation of neuron developmental morphology in vitro using the change-point test
+# Semi-automated quantitative evaluation of neuron developmental morphology in vitro using the change-point test
 # Submitted to: Neuroinformatics 2022
 
 # This script runs the change-point test (CPT) as described by Byrne et al. (2009) (refer to CPTautoFunc.R for more details) over
