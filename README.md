@@ -33,42 +33,28 @@ This directory includes an example dataset to run the analysis code (it is a sma
 
 The directory tree structure can be found below. This directory tree has been designed to support the analysis of datasets that may include multiple experiments with individual IDs (experimentID), multiple time points (div###), multiple well plates with individual IDs (plateID), multiple columns per plate (columnID), and multiple wells within a given column (rowID). This tree structure was designed to be as flexible as possible for describing experiments using well plates. Alternative tree structures may be used but will require that the user update the code appropriately. As implemented, the outermost directory is 'experiment_{experimentID}', which should house all the data from a given experiment. Within the experiment, directory sub-folders for each time point are included ('timepoint_div{###}') to organize the data into the time points in which they were imaged. Within each time point folder, plate subfolders 'plate_{plateID}' are used to group the data by the well plate ID, which would be useful if multiple plates were used simultaneously. Each well plate folder contains folders organized by the column within the well plate, the 'column_{columnID}' and subsequently organized by the row in each column 'row_{rowID}'. This enables multiple groups of data to be analyzed with a single run of 'runNeuronQuant.R'.
 
-As an example, the experimental directory tree for one experiment with two time points, two plates, and samples in columns 0 and 1 and in rows 0 and 1 found in the subfolers within the exampleDataset directory appears as follows:
+As an example, the experimental directory tree for one experiment (000) with two time points (div000 and div010), one plate (0), and samples in columns 0 and 1 and in rows 0 and 1 found in the subfolers within the exampleDataset directory appears as follows:
 
-    └───experiment_001
+    └───experiment_000
         ├───timepoint_div000
-        │   ├───plate_0
-        │   │   ├───column_0
-        │   │   │   ├───row_0
-        │   │   │   └───row_1
-        │   │   └───column_1
-        │   │       ├───row_0
-        │   │       └───row_1
-        │   └───plate_1
-        │       ├───column_0
-        │       │   ├───row_0
-        │       │   └───row_1
-        │       └───column_1
-        │           ├───row_0
-        │           └───row_1
+        │   └───plate_0
+        │       ├───row_0
+        │       │   ├───column_0
+        │       │   └───column_1
+        │       └───row_1
+        │           ├───column_0
+        │           └───column_1
         └───timepoint_div010
-            ├───plate_0
-            │   ├───column_0
-            │   │   ├───row_0
-            │   │   └───row_1
-            │   └───column_1
-            │       ├───row_0
-            │       └───row_1
-            └───plate_1
-                ├───column_0
-                │   ├───row_0
-                │   └───row_1
-                └───column_1
-                    ├───row_0
-                    └───row_1
+            └───plate_0
+                ├───row_0
+                │   ├───column_0
+                │   └───column_1
+                └───row_1
+                    ├───column_0
+                    └───column_1
                 
 
 ### 'reportedDataset'
 This directory hosts the reported dataset from Liao et al. (2022). There are two sub-directories inside: 'allFeatures_fig8' and 'highlightedFeatures_fig6fig7'. These two directories include the Jupyter files, data spreadsheet (.xlsx), and resulting .png and .svg files used to generate the violin plots found in Figures 6, 7, and 8 in Liao et al. (2022). 
-The full dataset can be found here: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6415474.svg)](https://doi.org/10.5281/zenodo.6415474). For a complete description of the dataset, please refer to the 'README.txt' file that is included with the full dataset. Briefly, the dataset contains the unprocessed raw images, the neurite traces from those images and the processed data that includes the results from the morphometric and statistical analyses. The unprocessed data can be used with the software tools presented in this GitHub repository to produce the results in the processedData folder. 
+The full dataset can be found here: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6415473.svg)](https://doi.org/10.5281/zenodo.6415473). For a complete description of the dataset, please refer to the 'README.txt' file that is included with the full dataset. Briefly, the dataset contains the unprocessed raw images, the neurite traces from those images and the processed data that includes the results from the morphometric and statistical analyses. The unprocessed data can be used with the software tools presented in this GitHub repository to produce the results in the processedData folder. 
 
