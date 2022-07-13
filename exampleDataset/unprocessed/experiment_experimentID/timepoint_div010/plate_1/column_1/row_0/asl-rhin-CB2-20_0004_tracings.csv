@@ -1,0 +1,6 @@
+Image,Tracing,Cluster,Type,Label,Length [pix],Mean Val [a.u.],SD Val [a.u.],Min Val [a.u.],Max Val [a.u.]
+asl-rhin-CB2-20_0004,N1,Default,Primary,2,53.682,154.679,1.064,152,157
+asl-rhin-CB2-20_0004,N2,Default,Primary,2,65.536,152.754,2.447,148,157
+asl-rhin-CB2-20_0004,N3,Default,Primary,2,48.86,153.304,1.297,149,156
+asl-rhin-CB2-20_0004,N5,Default,Primary,2,81.941,152.289,2.382,149,159
+asl-rhin-CB2-20_0004,N6,Default,Primary,1,41.009,149.167,1.699,146,154
