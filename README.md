@@ -31,12 +31,12 @@ This directory includes the R code used to automatically quantitatively assess t
 ### 'exampleDataset'
 This directory includes an example dataset to run the analysis code (it is a smaller subset of the data analyzed in Liao et al. (2022)). There are two sub-directories inside: 'unprocessed' and 'processed'. The 'unprocessed' directory includes the test data files in the appropriate file tree structure that runNeuronQuant.R expects. The 'processed' directory includes the expected outputs after running 'runNeuronQuant.R' and inputting the path to 'experiment_001'.
 
-The directory tree structure can be found below. This directory tree has been designed to support the analysis of datasets that may include multiple experiments with individual IDs (experimentID), multiple time points (div###), multiple well plates with individual IDs (plateID), multiple columns per plate (columnID), and multiple wells within a given column (rowID). This tree structure was designed to be as flexible as possible for describing experiments using well plates. Alternative tree structures may be used but will require that the user update the code appropriately. As implemented, the outermost directory is 'experiment_{experimentID}', which should house all the data from a given experiment. Within the experiment, directory sub-folders for each time point are included ('timepoint_div{###}_') to organize the data into the time points in which they were imaged. Within each time point folder, plate subfolders 'plate_{plateID}' are used to group the data by the well plate ID, which would be useful if multiple plates were used simultaneously. Each well plate folder contains folders organized by the column within the well plate, the 'column_{columnID}' and subsequently organized by the row in each column 'row_{rowID}'. This enables multiple groups of data to be analyzed with a single run of 'runNeuronQuant.R'.
+The directory tree structure can be found below. This directory tree has been designed to support the analysis of datasets that may include multiple experiments with individual IDs (experimentID), multiple time points (div###), multiple well plates with individual IDs (plateID), multiple columns per plate (columnID), and multiple wells within a given column (rowID). This tree structure was designed to be as flexible as possible for describing experiments using well plates. Alternative tree structures may be used but will require that the user update the code appropriately. As implemented, the outermost directory is 'experiment_{experimentID}', which should house all the data from a given experiment. Within the experiment, directory sub-folders for each time point are included ('timepoint_div{###}') to organize the data into the time points in which they were imaged. Within each time point folder, plate subfolders 'plate_{plateID}' are used to group the data by the well plate ID, which would be useful if multiple plates were used simultaneously. Each well plate folder contains folders organized by the column within the well plate, the 'column_{columnID}' and subsequently organized by the row in each column 'row_{rowID}'. This enables multiple groups of data to be analyzed with a single run of 'runNeuronQuant.R'.
 
 As an example, the experimental directory tree for one experiment with two time points, two plates, and samples in columns 0 and 1 and in rows 0 and 1 found in the subfolers within the exampleDataset directory appears as follows:
 
     └───experiment_001
-        ├───timepoint_div000_
+        ├───timepoint_div000
         │   ├───plate_0
         │   │   ├───column_0
         │   │   │   ├───row_0
@@ -51,7 +51,7 @@ As an example, the experimental directory tree for one experiment with two time 
         │       └───column_1
         │           ├───row_0
         │           └───row_1
-        └───timepoint_div010_
+        └───timepoint_div010
             ├───plate_0
             │   ├───column_0
             │   │   ├───row_0
