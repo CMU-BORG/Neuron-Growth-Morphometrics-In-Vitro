@@ -68,5 +68,5 @@ The directory tree structure can be found below. The outermost directory is 'dir
 
 ### 'reportedDataset'
 This directory hosts the reported dataset from Liao et al. (2022). There are two sub-directories inside: 'allFeatures_fig8' and 'highlightedFeatures_fig6fig7'. These two directories include the Jupyter files, data spreadsheet (.xlsx), and resulting .png and .svg files used to generate the violin plots found in Figures 6, 7, and 8 in Liao et al. (2022). 
-The full dataset can be found here: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6415474.svg)](https://doi.org/10.5281/zenodo.6415474)
+The full dataset can be found here: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6415474.svg)](https://doi.org/10.5281/zenodo.6415474). For a complete description of the dataset, please refer to the 'README.txt' file that is included with the full dataset. Briefly, the dataset contains the unprocessed raw images and the neurite traces from those images and the processed data that includes the results from the morphometric and statistical analyses. The unprocessed data can be used with the software tools presented in this current GitHub repository to produce the results in the processedData folder. 
 
